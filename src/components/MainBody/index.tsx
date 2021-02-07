@@ -9,6 +9,7 @@ import {View, Text, Image} from 'remax/one';
 
 export default () => {
 
+    debugger;
     const [list, setList] = useState([]);
     const [freshLoad, setFreshLoad] = useState(true);
     const [bottomStauts, setBottomStatus] = useState(false);
@@ -32,6 +33,7 @@ export default () => {
     }
 
     usePageEvent('onShow', () => {
+
         getMore();
     })
 
